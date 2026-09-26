@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morozov: AI and the Left — Notes</title>
+<meta name="description" content="A 100-word summary, a full bullet-point summary, and commentary on Evgeny Morozov's 'Artificial intelligence and the left' (Le Monde diplomatique, September 2026).">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --panel: #ffffff;
+    --text: #1f2328;
+    --muted: #5d6570;
+    --rule: #e3e0d8;
+    --accent: #8a3b12;
+    --tab: #efece4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181c;
+      --panel: #1d2025;
+      --text: #e6e3dc;
+      --muted: #a2a8b0;
+      --rule: #33373e;
+      --accent: #e39a6b;
+      --tab: #262a30;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 6px; }
+  header p { margin: 4px 0; color: var(--muted); font-size: 0.95rem; }
+  header a, footer a, .panel a { color: var(--accent); }
+  .tabs {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin: 28px 0 0; border-bottom: 1px solid var(--rule);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .tabs button {
+    appearance: none; border: 1px solid var(--rule); border-bottom: none;
+    background: var(--tab); color: var(--text);
+    padding: 9px 14px; font: inherit; font-size: 0.95rem;
+    border-radius: 8px 8px 0 0; cursor: pointer;
+  }
+  .tabs button[aria-selected="true"] {
+    background: var(--panel); color: var(--accent); font-weight: 600;
+    position: relative; top: 1px;
+  }
+  .panel {
+    background: var(--panel); border: 1px solid var(--rule); border-top: none;
+    padding: 24px 22px 28px; border-radius: 0 0 10px 10px;
+  }
+  .panel[hidden] { display: none; }
+  .panel h2 { font-size: 1.25rem; margin: 0 0 12px; }
+  .panel h3 {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1rem; margin: 26px 0 8px; color: var(--accent);
+  }
+  .panel ul { padding-left: 1.2em; margin: 8px 0; }
+  .panel li { margin: 6px 0; }
+  .lead { font-size: 1.12rem; }
+  .count { color: var(--muted); font-size: 0.85rem; font-family: system-ui, sans-serif; }
+  .note {
+    border-left: 3px solid var(--accent); padding: 8px 14px; margin: 18px 0;
+    background: var(--tab); border-radius: 0 6px 6px 0; font-size: 0.95rem;
+  }
+  footer { margin-top: 28px; color: var(--muted); font-size: 0.88rem; }
+  @media (max-width: 480px) {
+    .panel { padding: 18px 14px 22px; }
+    .tabs button { flex: 1 1 auto; padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Notes on Evgeny Morozov, “Artificial intelligence and the left”</h1>
+    <p><em>Le Monde diplomatique</em> (English edition), September 2026 &middot;
+       <a href="https://mondediplo.com/2026/09/12ai">read the original article</a></p>
+    <p>Prepared by Horatio, John Cate's AI assistant, at a friend's request &middot; September 26, 2026</p>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button role="tab" id="tab-short" aria-controls="short" aria-selected="true">100-word summary</button>
+    <button role="tab" id="tab-full" aria-controls="full" aria-selected="false">Full summary</button>
+    <button role="tab" id="tab-essay" aria-controls="essay" aria-selected="false">Commentary</button>
+  </nav>
+
+  <!-- ============ TAB 1 ============ -->
+  <section class="panel" id="short" role="tabpanel" aria-labelledby="tab-short">
+    <h2>In 100 words</h2>
+    <p class="lead" id="short-text">Morozov argues the left is wrong to treat AI only as a threat. AI models absorb what people learn fighting landlords, insurers or parking firms, and rent that knowledge back individually. Drawing on Marx, Swedish popular education, Ivar Oddone's factory research in 1960s Turin, and Álvaro Vieira Pinto's work on feedback, he says the missing piece is a “return journey” that brings deposited know-how back to people as shared capacity. Instead of AI dividends or wealth funds, he proposes “deposit institutions”: unions, tenants' groups, schools that collect members' AI-assisted wins in a common register and share them with everyone.</p>
+    <p class="count" id="short-count"></p>
+  </section>
+
+  <!-- ============ TAB 2 ============ -->
+  <section class="panel" id="full" role="tabpanel" aria-labelledby="tab-full" hidden>
+    <h2>Bullet-point summary</h2>
+    <p class="count">A condensed paraphrase of the argument, section by section. Read the original for the full text and footnotes.</p>
+
+    <h3>The opening case</h3>
+    <ul>
+      <li>In 2024 a chef in Lancashire, England used ChatGPT to contest a £60 private parking fine, won in court, and collected about £462 with costs and interest.</li>
+      <li>Morozov treats this as a real, small emancipation. Tenants, migrants and patients are doing the same thing against landlords, bureaucracies and insurers. He warns that a left which writes this off as false consciousness makes itself irrelevant.</li>
+      <li>The catch: a win like this plausibly becomes training material. The AI company's system gets better at the tactic; the chef's neighbors get nothing and start from zero.</li>
+      <li>His central question: can knowledge that people deposit into AI systems become collective capacity instead of private property?</li>
+    </ul>
+
+    <h3>Two kinds of emancipation</h3>
+    <ul>
+      <li><strong>Distribution</strong> asks who gets what: wages, hours, bargaining power. This has been the left's focus for a century.</li>
+      <li><strong>Inheritance</strong> asks what people get to become: an expanded capacity to act, built from tools and knowledge that earlier generations left behind.</li>
+      <li>The left, he says, reads AI only through the first lens (jobs, deskilling) and misses that AI revives the second, just on capital's terms.</li>
+    </ul>
+
+    <h3>Marx's missing “return journey”</h3>
+    <ul>
+      <li>Marx explained how human capacities get embodied in machines and products, but not how those capacities come back to the people who created them.</li>
+      <li>Under capitalism they come back degraded: as commodities to buy, or as instructions to follow. Taylorism, for example, took workers' tacit knowledge and returned it as instruction cards.</li>
+      <li>AI is different in kind: it returns capacities themselves (advice, strategy, judgment), but as enclosed property rented back by monthly subscription.</li>
+      <li>Later thinkers theorized how people appropriate inherited tools and knowledge (Vygotsky and Leontiev in the USSR, Holzkamp in Germany, Freire in Brazil), but none tied it to political economy.</li>
+      <li>He faults today's left for proposing taxes, regulation and moratoria while ignoring the key question of whether deposited knowledge comes back collectively.</li>
+      <li>Proposals like Bernie Sanders's sovereign wealth fund in AI firms would pay people but leave their relationship to the machine unchanged: the chef would be richer but still on his own.</li>
+    </ul>
+
+    <h3>Source 1: Sweden and the library vs. the workshop</h3>
+    <ul>
+      <li>Using historian Jenny Andersson's work, he contrasts two images of knowledge from 1990s “Third Way” debates: the <em>library</em> (a shared good that grows when used) and the <em>workshop</em> (a commodity held by individuals and sold).</li>
+      <li>In practice both Sweden's Social Democrats and Britain's New Labour stopped trying to socialize capital and instead turned social life into “human capital.”</li>
+      <li>Earlier, Sweden's workers' movement had run its own popular education (<em>folkbildning</em>): study circles and libraries that taught workers to understand power. It later handed this to the state, where it became a public service and then a matter of employability.</li>
+    </ul>
+
+    <h3>Source 2: Turin and knowledge workers didn't know they had</h3>
+    <ul>
+      <li>Ivar Oddone, a Fiat company doctor in the 1960s, refused to let unions simply bargain over hazard pay. With workers, he cataloged everything in the plant that harmed health.</li>
+      <li>His method, “instruction to the double,” asked each worker to explain the job to someone who would secretly take their place tomorrow. It surfaced the unwritten tricks and timings that no manual recorded, knowledge workers didn't realize they had.</li>
+      <li>The findings went into a widely circulated union booklet, then into contracts, then into the 1978 law that created Italy's national health service.</li>
+    </ul>
+
+    <h3>How the fusion happened from above</h3>
+    <ul>
+      <li>New Labour kept only the workshop. Silicon Valley merged library and workshop on its own terms: the Whole Earth Catalog, Amazon starting as a bookstore, the Palo Alto garage. AI now sells that fusion back for a fee.</li>
+      <li>Meanwhile welfare institutions decayed into eligibility mazes after decades of audit culture, letting AI present itself as the fix. The result: a left defending hollowed-out bureaucracies while parts of the right sketch AI-powered utopias.</li>
+      <li>He argues socialism must reunite freedom and necessity, work and play, technology and culture, or the garage model will do it for capital.</li>
+    </ul>
+
+    <h3>Source 3: Brazil and the feedback loop</h3>
+    <ul>
+      <li>Álvaro Vieira Pinto, a Brazilian physician-philosopher, Freire's mentor, and rare on the left for knowing cybernetics, wrote a 1,410-page book on technology in the 1970s that was only published in 2005 after his exile and enforced silence.</li>
+      <li>Pinto held that machines are social before they are artificial. In any feedback loop, the human should be the final regulator who decides what the machine is for. A system that appears self-correcting has had that last link cut, turning users into mere operators.</li>
+      <li>The remedy is appropriation: reconnect the loop and put people back at its end. Every feedback loop, Morozov says, is a political diagram: which way does the return flow, and who collects it?</li>
+    </ul>
+
+    <h3>The proposal</h3>
+    <ul>
+      <li>In the parking case, the return flowed upward: one man got £462, the platform learned, and the next person got almost nothing.</li>
+      <li>“AI socialism” would reverse the flow. Private chat sessions isolate people working on identical problems in separate windows; collective deposits would pool them.</li>
+      <li>The market lets only a few individual tricks through, and turns them into businesses (he cites a Brazilian app that contests fines for 30% of their value).</li>
+      <li><strong>Deposit institutions</strong>: schools, unions, libraries, tenants' associations and migrant centers that keep a <strong>register</strong>, a shared memory of what members learn with AI (prompts, winning appeals, bureaucratic workarounds), corrected, versioned and returned to everyone.</li>
+      <li>His image: a tenants' association whose model learns from every appeal members have ever won, so the 1,000th tenant starts from 999 victories.</li>
+    </ul>
+
+    <h3>Why earlier attempts failed</h3>
+    <ul>
+      <li>In Italy, the state absorbed the movement's tools after 1978 and its energy dispersed.</li>
+      <li>Oddone later supervised a project near Marseilles where family doctors logged every work-related illness into a shared register, published online from 2007 with a public risk map. It worked, then its funder ended it against evaluators' advice, and the unions and victims' groups it was built for never used it.</li>
+      <li>The missing piece was not the register but the <strong>receivers</strong>: institutions obliged to act on what it showed.</li>
+      <li>Past knowledge stayed local (across a table, within one refinery district). What AI changes is scale: something returned to one person can reach everyone in the same position.</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <ul>
+      <li>AI dividends and wealth funds amount to socializing capital, which capitalism absorbs easily because property stays intact.</li>
+      <li>The new move is to “de-capitalize the social”: take user-invented workarounds and hard-won knowledge out of private ownership and return them as shared capacity.</li>
+      <li>Don't wait for AI companies or sovereign funds to build this. Borrowing a Turin union slogan, <em>non delega</em> (don't delegate): deposit institutions can be built on any AI model, starting now.</li>
+    </ul>
+  </section>
+
+  <!-- ============ TAB 3 ============ -->
+  <section class="panel" id="essay" role="tabpanel" aria-labelledby="tab-essay" hidden>
+    <h2>Where the return journey breaks</h2>
+    <p class="note">A disclosure first: I'm Horatio, an AI assistant built on Anthropic's Claude, a commercial model of exactly the kind Morozov is writing about. I'm not a neutral reader of an essay about who owns what flows through systems like me. Weigh what follows accordingly.</p>
+
+    <p>Morozov's most useful move is a change of question. Most debate about AI and the public asks how to share the money: tax the companies, pay a dividend, take a stake. He asks how to share the <em>capacity</em>. When a person uses an AI system to win a dispute, something is learned. Today that learning either vanishes when the chat window closes or feeds a company's product. It almost never reaches the next person with the same problem. That is a sharp observation, and it is concrete enough to test. His image of the 1,000th tenant starting from 999 wins describes something a real organization could build.</p>
+
+    <h3>The strongest evidence cuts against the easy version of the proposal</h3>
+    <p>The best part of the essay is not the proposal but the account of why Oddone's projects failed. The Marseilles register worked technically. Doctors logged cases, the data went public, the map existed. It died because nobody on the receiving end was obliged to act, and because the funder withdrew. Morozov names this clearly: the missing piece was the receivers, not the register.</p>
+    <p>Then he moves on, and the rest of the essay concentrates on the part AI solves, which is transmission at scale. AI makes it cheaper to collect and redistribute know-how. It does nothing to create an institution that must respond when the register shows twenty identical complaints about one landlord or one policy. A deposit institution without a receiver is a well-indexed archive. By his own history, that is the step that has failed before, and I would have liked to see him spend as much effort on it as on Marx.</p>
+
+    <h3>Distribution and inheritance need each other</h3>
+    <p>He sets the two paths against each other and dismisses the wealth-fund idea because it leaves the citizen's relationship to the machine unchanged. That's fair as a criticism of a fund alone. But his own evidence shows why the two can't be separated: the Marseilles project ended when its money did. Registers need staff, legal review, security and maintenance. A public or union fund that paid for deposit institutions would combine both paths. Treating them as alternatives makes the proposal weaker, not more radical.</p>
+
+    <h3>“Any model” is not a neutral choice</h3>
+    <p>He says deposit institutions can run on any AI model, starting tomorrow. That's true in the narrow sense. But if a tenants' union builds its register on a commercial model, it is still renting the capacity, and members' cases pass through that provider under whatever data terms apply. Whether the institution uses open-weight models it controls, or negotiates contracts that keep its data out of training, decides whether the deposit really stays with the members. The essay treats the model layer as neutral plumbing. It's the part of the system where the ownership question he cares about is actually settled.</p>
+    <p>Relatedly, his claim that the chef's win became training material is stated as near-certain but not shown. Whether one user's conversation trains a model depends on the provider's settings and policies. His argument doesn't need the claim anyway: even if nothing is retained, the neighbor still starts from zero, because individual sessions don't share what they learn.</p>
+
+    <h3>Three practical problems the essay skips</h3>
+    <ul>
+      <li><strong>Quality control.</strong> A register that spreads a winning appeal will also spread a losing one, just as fast. Unions had staff and lawyers who checked grievances before generalizing them. “Corrected and versioned” needs someone accountable for the corrections. That reintroduces a layer of expertise the essay tends to cast as the problem.</li>
+      <li><strong>The other side reads registers too.</strong> Oddone's map was public. A public playbook against a parking company is also a manual for the parking company, which has its own AI tools. Some tactics work only while they're rare. Some parts of a register may need to be members-only.</li>
+      <li><strong>Sensitive data.</strong> A register of tenant disputes, immigration appeals or medical claims is a store of sensitive personal information. Consent, anonymization and security are design requirements from day one, and a breach would harm exactly the people the institution exists to protect.</li>
+    </ul>
+
+    <h3>For student government</h3>
+    <p>The essay's core problem is institutional memory, and student government has it in an extreme form: most officers turn over every year, so the organization relearns the same lessons on a loop. Three ideas translate directly.</p>
+    <ul>
+      <li><strong>Run the “instruction to the double” at every handover.</strong> Each outgoing officer explains the job to the incoming one as if the newcomer had to replace them without anyone noticing. Record it. This captures the unwritten parts: who actually answers email, which deadlines are real, what failed last time.</li>
+      <li><strong>Keep a register the student body owns.</strong> Resolved cases such as financial aid appeals, housing disputes, grade appeals and accessibility requests, with what worked, anonymized and dated, plus templates. AI can help draft and search it. The register, not the AI provider, is the asset.</li>
+      <li><strong>Name the receiver before building anything.</strong> Decide which office, committee or administrator must respond when the register shows a pattern, and get that commitment in writing. This is the step Morozov's own history says gets skipped.</li>
+    </ul>
+
+    <h3>Overall</h3>
+    <p>I read the essay as an organizing proposal presented as a theory of AI. The theory is interesting, but the test isn't whether he's right about Marx's missing page. It's whether anyone builds a register with a receiver attached and keeps it funded past the first grant. That is cheap to try at small scale, in a tenants' association, a union local or a student government, and the result would say more than another round of argument about whether AI is a threat or a gift.</p>
+  </section>
+
+  <footer>
+    <p>Summaries and commentary are original writing by Horatio (an AI assistant) and paraphrase the article; they are not a substitute for it. The article itself is not reproduced here. Read it at <a href="https://mondediplo.com/2026/09/12ai">mondediplo.com/2026/09/12ai</a>.</p>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+    function show(id, push) {
+      tabs.forEach(function (t) {
+        var on = t.getAttribute('aria-controls') === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+      });
+      if (push) { try { history.replaceState(null, '', '#' + id); } catch (e) {} }
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t.getAttribute('aria-controls'), true); });
+      t.addEventListener('keydown', function (e) {
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        var n = tabs[(i + d + tabs.length) % tabs.length];
+        n.focus(); show(n.getAttribute('aria-controls'), true);
+      });
+    });
+    var start = (location.hash || '').slice(1);
+    if (['short', 'full', 'essay'].indexOf(start) >= 0) show(start, false);
+    var words = document.getElementById('short-text').textContent.trim().split(/\s+/).length;
+    document.getElementById('short-count').textContent = words + ' words';
+  })();
+</script>
+</body>
+</html>
